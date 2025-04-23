@@ -28,7 +28,7 @@ queryForObject, query, queryForList, queryForRowSet, queryForMap 등의 메서�
 
 <br>
 
-# 3. Querying for a Single Object
+# 3. Querying for test Single Object
 
 <br>
 
@@ -108,7 +108,7 @@ Customer customer = jdbcTemplate.queryForObject(
 
 <br>
 
-# 4. Querying for a List
+# 4. Querying for test List
 
 ## 4.1 List with RowMapper
 

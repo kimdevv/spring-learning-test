@@ -1,7 +1,7 @@
 package cholog;
 
-import cholog.scan.ComponentScanBean;
-import cholog.scan.ContextConfiguration;
+import test.TestComponentScanBean;
+import test.TestContextConfiguration;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 
@@ -12,8 +12,8 @@ public class ComponentScanTest {
 
     @Test
     void scanComponent() {
-        ApplicationContext context = getApplicationContext(ContextConfiguration.class);
-        ComponentScanBean componentScanBean = context.getBean("componentScanBean", ComponentScanBean.class);
-        assertThat(componentScanBean).isNotNull();
+        ApplicationContext context = getApplicationContext(TestContextConfiguration.class);
+        TestComponentScanBean testComponentScanBean = context.getBean("testComponentScanBean", TestComponentScanBean.class);
+        assertThat(testComponentScanBean).isNotNull();
     }
 }

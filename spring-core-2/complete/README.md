@@ -8,7 +8,7 @@
 
 <br>
 
-## 1.1. Declaring a Bean
+## 1.1. Declaring test Bean
 
 <br>
 
