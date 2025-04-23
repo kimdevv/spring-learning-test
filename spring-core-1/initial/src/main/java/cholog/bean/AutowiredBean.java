@@ -10,6 +10,11 @@ public class AutowiredBean {
      */
     private SpringBean springBean;
 
+    @Autowired
+    public AutowiredBean(SpringBean springBean) {
+        this.springBean = springBean;
+    }
+
     public String sayHello() {
         return springBean.hello();
     }
